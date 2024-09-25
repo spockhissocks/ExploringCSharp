@@ -1,6 +1,4 @@
-﻿using DependencyInjection;
-
-namespace DependencyInjection
+﻿namespace DependencyInjection
 {
     internal class Program
     {
