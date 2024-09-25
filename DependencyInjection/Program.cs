@@ -6,11 +6,11 @@ namespace DependencyInjection
     {
         static void Main(string[] args)
         {
-            GameManager gm = new GameManager();
+            GameManager gm = new GameManager(new HumanPlayer(), new ComputerPlayer());
 
             do
             {
-                RoundResult result = gm.PlayGround();
+                RoundResult result = gm.PlayRound();
 
                 if (result == RoundResult.Player1Win)
                 {
